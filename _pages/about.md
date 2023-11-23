@@ -26,11 +26,6 @@ IEEE Conference on International Conference on Computer Vision (ICCV), 2023. [[P
 <ins>**Ruihao Xia**</ins>, Chaoqiang Zhao, Qiyu Sun, Shuang Cao, Yang Tang <br>
 IFAC Control Engineering Practice, 2023. [[Paper]](https://www.sciencedirect.com/science/article/pii/S0967066123000990)
 
-<!--
-### Novel Label Alignment with Visual Foundation Model for Cross-Class Domain Adaptive Semantic Segmentation
-Wenqi Ren, <ins>**Ruihao Xia**</ins>, Meng Zheng, Ziyan Wu, Yang Tang <br>
-(**Under Review**) IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024.
--->
 
 Education
 ======
