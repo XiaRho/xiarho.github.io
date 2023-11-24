@@ -12,7 +12,7 @@ This is Ruihao Xia's personal homepage.
 
 A short introduction
 ======
-Ruihao Xia is a PhD student from the East China University of Science and Technology (ECUST) who specializes in the field of computer vision and deep learning.
+Ruihao Xia is a PhD student from the East China University of Science and Technology ([ECUST](https://en.wikipedia.org/wiki/East_China_University_of_Science_and_Technology)) who specializes in the field of computer vision and deep learning.
 His research is centered on **Event-based Vision**, **Cross-Modality Domain Adaptation**, and **Semantic Segmentation**. 
 Xia received his B.S. in Mechanical Engineering also from ECUST, where he got excellent grades and developed a passion for Computer Vision.
 
@@ -32,7 +32,7 @@ Education
 ### East China University of Science and Technology (ECUST), Shanghai, China
 <br>
 **[2021-Present]** PhD in Control Science and Engineering
-* Supervisor: Prof. Dr. Yang Tang [[Google Scholar]](https://scholar.google.com/citations?user=S9UE3lQAAAAJ&hl=en)
+* Supervisor: Prof. Dr. Yang Tang (IEEE Fellow) [[Google Scholar]](https://scholar.google.com/citations?user=S9UE3lQAAAAJ&hl=en)
 
 **[2017-2021]** B.S. in Mechanical Engineering
 * GPA: 3.7106/4.0
