@@ -24,8 +24,11 @@ IEEE Conference on International Conference on Computer Vision (ICCV), 2023. [[P
 
 ### Modality Translation and Fusion for Event-based Semantic Segmentation
 <ins>**Ruihao Xia**</ins>, Chaoqiang Zhao, Qiyu Sun, Shuang Cao, Yang Tang <br>
-IFAC Control Engineering Practice, 2023. [[Paper]](https://www.sciencedirect.com/science/article/pii/S0967066123000990)
+IFAC Control Engineering Practice (CEP), 2023. [[Paper]](https://www.sciencedirect.com/science/article/pii/S0967066123000990)
 
+### Novel Label Alignment with Visual Foundation Model for Cross-Class Domain Adaptive Semantic Segmentation
+Wenqi Ren, <ins>**Ruihao Xia**</ins>, Meng Zheng, Ziyan Wu, Yang Tang <br>
+(**Under Review**), 2023.
 
 Education
 ======
