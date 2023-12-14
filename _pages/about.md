@@ -30,7 +30,10 @@ IFAC Control Engineering Practice (CEP), 2023. [[Paper]](https://www.sciencedire
 Wenqi Ren, <ins>**Ruihao Xia**</ins>, Meng Zheng, Ziyan Wu, Yang Tang <br>
 (**Under Review**), 2023.
 
-Education
+### Motion Planning and Control of A Morphing Quadrotor in Restricted Scenarios
+Guiyang Cui, <ins>**Ruihao Xia**</ins>, Xin Jin, Yang Tang <br>
+(**Under Review**), 2023. [[Paper]](https://arxiv.org/abs/2312.07075)
+
 ======
 ### East China University of Science and Technology (ECUST), Shanghai, China
 <br>
