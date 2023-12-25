@@ -16,7 +16,7 @@ Ruihao Xia is a PhD student from the East China University of Science and Techno
 His research is centered on **Event-based Vision**, **Cross-Modality Domain Adaptation**, and **Semantic Segmentation**. 
 Xia received his B.S. in Mechanical Engineering also from ECUST, where he got excellent grades and developed a passion for Computer Vision.
 
-Publiactions
+Publications
 ======
 ### CMDA: Cross-Modality Domain Adaptation for Nighttime Semantic Segmentation
 <ins>**Ruihao Xia**</ins>, Chaoqiang Zhao, Meng Zheng, Ziyan Wu, Qiyu Sun, Yang Tang <br>
