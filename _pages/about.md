@@ -28,11 +28,15 @@ IFAC Control Engineering Practice (CEP), 2023. [[Paper]](https://www.sciencedire
 
 ### Novel Label Alignment with Visual Foundation Model for Cross-Class Domain Adaptive Semantic Segmentation
 Wenqi Ren, <ins>**Ruihao Xia**</ins>, Meng Zheng, Ziyan Wu, Yang Tang <br>
-(**Under Review**), 2023.
+(**Under Review**), 2024.
 
-### Motion Planning and Control of A Morphing Quadrotor in Restricted Scenarios
+### Motion Planning and Control of a Morphing Quadrotor in Restricted Scenarios
 Guiyang Cui, <ins>**Ruihao Xia**</ins>, Xin Jin, Yang Tang <br>
-(**Under Review**), 2023. [[Paper]](https://arxiv.org/abs/2312.07075)
+(**Under Review**), 2024. [[Paper]](https://arxiv.org/abs/2312.07075)
+
+### Motion Planning and Control of Hybrid Flying-Crawling Quadrotors
+Dongnan Hu, <ins>**Ruihao Xia**</ins>, Xin Jin, Yang Tang <br>
+(**Under Review**), 2024. [[Paper]](https://arxiv.org/abs/2312.08718)
 
 Education
 ======
