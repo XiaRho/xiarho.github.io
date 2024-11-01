@@ -18,25 +18,33 @@ Xia received his B.S. in Mechanical Engineering also from ECUST, where he got ex
 
 Publications
 ======
+### Towards Natural Image Matting in the Wild via Real-Scenario Prior
+<ins>**Ruihao Xia**</ins>, Yu Liang, Peng-Tao Jiang, Hao Zhang, Qianru Sun, Yang Tang, Bo Li, Pan Zhou <br>
+arxiv, 2024. [[Paper]](https://arxiv.org/abs/2410.06593)[[Code]](https://github.com/XiaRho/SEMat)
+
+### Unsupervised Modality Adaptation with Text-to-Image Diffusion Models for Semantic Segmentation
+<ins>**Ruihao Xia**</ins>, Yu Liang, Peng-Tao Jiang, Hao Zhang, Bo Li, Yang Tang, Pan Zhou <br>
+The Thirty-eighth Annual Conference on Neural Information Processing Systems (NIPS), 2024. [[Paper]](https://arxiv.org/abs/2410.21708)[[Code]](https://github.com/XiaRho/MADM)
+
+### Cross-Class Domain Adaptive Semantic Segmentation with Visual Language Models
+Wenqi Ren, <ins>**Ruihao Xia**</ins>, Meng Zheng, Ziyan Wu, Yang Tang, Nicu Sebe <br>
+ACM Multimedia (ACM MM), 2024. [[Paper]](https://openreview.net/pdf?id=TjFn6xktTm)
+
 ### CMDA: Cross-Modality Domain Adaptation for Nighttime Semantic Segmentation
 <ins>**Ruihao Xia**</ins>, Chaoqiang Zhao, Meng Zheng, Ziyan Wu, Qiyu Sun, Yang Tang <br>
 IEEE Conference on International Conference on Computer Vision (ICCV), 2023. [[Paper]](https://openaccess.thecvf.com/content/ICCV2023/html/Xia_CMDA_Cross-Modality_Domain_Adaptation_for_Nighttime_Semantic_Segmentation_ICCV_2023_paper.html)[[Code]](https://github.com/XiaRho/CMDA)
 
-### Modality Translation and Fusion for Event-based Semantic Segmentation
-<ins>**Ruihao Xia**</ins>, Chaoqiang Zhao, Qiyu Sun, Shuang Cao, Yang Tang <br>
-IFAC Control Engineering Practice (CEP), 2023. [[Paper]](https://www.sciencedirect.com/science/article/pii/S0967066123000990)
-
-### Novel Label Alignment with Visual Foundation Model for Cross-Class Domain Adaptive Semantic Segmentation
-Wenqi Ren, <ins>**Ruihao Xia**</ins>, Meng Zheng, Ziyan Wu, Yang Tang <br>
-(**Under Review**), 2024.
-
 ### Motion Planning and Control of a Morphing Quadrotor in Restricted Scenarios
 Guiyang Cui, <ins>**Ruihao Xia**</ins>, Xin Jin, Yang Tang <br>
-(**Under Review**), 2024. [[Paper]](https://arxiv.org/abs/2312.07075)
+IEEE Robotics and Automation Letters (RA-L), 2024. [[Paper]](https://arxiv.org/abs/2312.07075)
 
 ### Motion Planning and Control of Hybrid Flying-Crawling Quadrotors
 Dongnan Hu, <ins>**Ruihao Xia**</ins>, Xin Jin, Yang Tang <br>
-(**Under Review**), 2024. [[Paper]](https://arxiv.org/abs/2312.08718)
+arxiv, 2023. [[Paper]](https://arxiv.org/abs/2312.08718)
+
+### Modality Translation and Fusion for Event-based Semantic Segmentation
+<ins>**Ruihao Xia**</ins>, Chaoqiang Zhao, Qiyu Sun, Shuang Cao, Yang Tang <br>
+IFAC Control Engineering Practice (CEP), 2023. [[Paper]](https://www.sciencedirect.com/science/article/pii/S0967066123000990)
 
 Education
 ======
