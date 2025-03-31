@@ -24,7 +24,7 @@ arxiv, 2024. [[Paper]](https://arxiv.org/abs/2410.06593)[[Code]](https://github.
 
 ### Unsupervised Modality Adaptation with Text-to-Image Diffusion Models for Semantic Segmentation
 <ins>**Ruihao Xia**</ins>, Yu Liang, Peng-Tao Jiang, Hao Zhang, Bo Li, Yang Tang, Pan Zhou <br>
-The Thirty-eighth Annual Conference on Neural Information Processing Systems (NIPS), 2024. [[Paper]](https://arxiv.org/abs/2410.21708)[[Code]](https://github.com/XiaRho/MADM)
+The Thirty-eighth Annual Conference on Neural Information Processing Systems (NeurIPS), 2024. [[Paper]](https://arxiv.org/abs/2410.21708)[[Code]](https://github.com/XiaRho/MADM)
 
 ### Cross-Class Domain Adaptive Semantic Segmentation with Visual Language Models
 Wenqi Ren, <ins>**Ruihao Xia**</ins>, Meng Zheng, Ziyan Wu, Yang Tang, Nicu Sebe <br>
