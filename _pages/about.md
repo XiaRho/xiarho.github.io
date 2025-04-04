@@ -54,7 +54,7 @@ Education
 * Supervisor: Prof. Dr. Yang Tang (IEEE Fellow) [[Google Scholar]](https://scholar.google.com/citations?user=S9UE3lQAAAAJ&hl=en)
 
 **[2017-2021]** B.S. in Mechanical Engineering
-* GPA: 3.7106/4.0
+* GPA: 3.71/4.0
 * Honors and Awards:
   * 2021 Shanghai Excellent Graduates
   * 2020 National Undergraduate Smart Car Competition 2<sup>nd</sup> Prize
