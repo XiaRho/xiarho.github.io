@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruihao Xia - Personal Homepage</title>
+    
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/vendor/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        .main-container {
+            display: flex;
+            min-height: 100vh;
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+        }
+
+        /* Fixed Left Sidebar */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 350px;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255,255,255,0.2);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-photo:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-name {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .profile-title {
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            text-align: center;
+            opacity: 0.9;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            padding: 12px 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            font-weight: 400;
+        }
+
+        .social-link:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-link i {
+            width: 20px;
+            margin-right: 15px;
+            font-size: 1.1rem;
+        }
+
+        /* Main Content */
+        .content {
+            margin-left: 350px;
+            padding: 40px 50px;
+            flex: 1;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: inline-block;
+        }
+
+        .intro-section {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .intro-section p {
+            margin-bottom: 20px;
+        }
+
+        .education-item, .experience-item, .research-item {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .education-item:hover, .experience-item:hover, .research-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .item-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .item-subtitle {
+            font-size: 1.1rem;
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .item-subtitle .logo {
+            width: auto;           /* 调整比例，比如 20px */
+            height: 25px;          /* 保持纵横比 */
+            object-fit: contain;   /* 确保不拉伸变形 */
+        }
+
+        .item-date {
+            font-size: 0.95rem;
+            color: #7f8c8d;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .item-description {
+            color: #555;
+            line-height: 1.6;
+            hyphens: auto;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .research-tags {
+            margin-top: 15px;
+        }
+        
+        .research-image img {
+            max-width: 400px;               /* 限制最大宽度 */
+            height: auto;                   /* 等比例缩放 */
+            border-radius: 8px;             /* 可选：圆角 */
+        }
+
+        .tag {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            margin-right: 8px;
+            margin-bottom: 5px;
+        }
+
+        .publication-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .publication-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                padding: 30px 20px;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 30px 20px;
+            }
+
+            .main-container {
+                flex-direction: column;
+            }
+
+            .item-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .item-date {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Fixed Left Sidebar -->
+        <div class="sidebar">
+            <img src="./assets/Ruihao Xia.jpeg" alt="Ruihao Xia" class="profile-photo">
+            <h1 class="profile-name">Ruihao Xia</h1>
+            <p class="profile-title">Ph.D student in East China University of Science and Technology (ECUST)</p>
+            
+            <div class="social-links">
+                <a href="mailto:rhao.xia@gmail.com" class="social-link">
+                    <i class="zmdi zmdi-email"></i>
+                    <span>rhao.xia@gmail.com</span>
+                </a>
+                <a href="https://github.com/xiarho" target="_blank" class="social-link">
+                    <i class="zmdi zmdi-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://scholar.google.com/citations?user=xvFJmwIAAAAJ&hl=zh-CN&oi=sra" target="_blank" class="social-link">
+                    <i class="zmdi zmdi-graduation-cap"></i>
+                    <span>Google Scholar</span>
+                </a>
+                <!-- <a href="https://linkedin.com/in/ruihaoxia" target="_blank" class="social-link">
+                    <i class="zmdi zmdi-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a> -->
+                <a href="./assets/华东理工大学-夏睿豪-20250929.pdf" target="_blank" class="social-link">
+                    <i class="zmdi zmdi-file-text"></i>
+                    <span>Download Chinese CV</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- About Section -->
+            <section class="section">
+                <h2 class="section-title">About Me</h2>
+                <div class="intro-section">
+                    <p>
+                        Ruihao Xia is a PhD student from the East China University of Science and Technology <a href="https://en.wikipedia.org/wiki/East_China_University_of_Science_and_Technology" target="_blank">(ECUST)</a> who specializes in the field of computer vision and deep learning. His research is centered on <strong>3D AI Generation</strong>, <strong>Event-based Vision</strong>, <strong>Cross-Modality Domain Adaptation</strong>, and <strong>Semantic Segmentation</strong>. Xia received his B.S. in Mechanical Engineering also from ECUST, where he got excellent grades and developed a passion for Computer Vision.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="section">
+                <h2 class="section-title">Education</h2>
+                
+                <div class="education-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">Visiting PhD Student in School of Computing and Information Systems</div>
+                            <div class="item-subtitle">
+                                <img src="assets/smu_logo.png" alt="SMU Logo" class="logo" style="height: 50px;">
+                                Singapore Management University (SMU)
+                            </div>
+                        </div>
+                        <div class="item-date">2025.01 - Present</div>
+                    </div>
+                    <ul class="item-description" style="margin-left: 30px;">
+                        ★ Surpervised by Prof. <a href="https://panzhous.github.io/" target="_blank">Pan Zhou</a>
+                    </ul>
+                </div>
+
+                <div class="education-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">PhD in Control Science and Engineering</div>
+                            <div class="item-subtitle">
+                                <img src="assets/ecust_logo.png" alt="ECUST Logo" class="logo" style="height: 50px;">
+                                East China University of Science and Technology (ECUST)
+                            </div>
+                        </div>
+                        <div class="item-date">2021 - Present (2026.09)</div>
+                    </div>
+                    <ul class="item-description" style="margin-left: 30px;">
+                        ★ Surpervised by Prof. <a href="http://www.ytangecust.com/" target="_blank">Yang Tang</a>
+                    </ul>
+                    <ul class="item-description" style="margin-left: 30px;">
+                        <li>2025.05 Principal Investigator of the <a href="https://mp.weixin.qq.com/s/qlQBWSwoWUop2dP-JYhGTg" target="_blank">Interdisciplinary Innovation and Education-Integration Project</a>, Class IV Peak Discipline of “Intelligent Science and Technology” in Shanghai </li>
+                        <li>2025.03 “Zhangjiang Shu Youbo” Ph.D. Cultivation Program in ECUST</li>
+                    </ul>
+                </div>
+
+                <div class="education-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">B.S. in Mechanical Engineering</div>
+                            <div class="item-subtitle">
+                                <img src="assets/ecust_logo.png" alt="ECUST Logo" class="logo" style="height: 50px;">
+                                East China University of Science and Technology (ECUST)
+                            </div>
+                        </div>
+                        <div class="item-date">2017 - 2021</div>
+                    </div>
+                    <ul class="item-description" style="margin-left: 30px;">
+                        <li>2021 Shanghai Excellent Graduates</li>
+                        <li>2020 National Undergraduate Smart Car Competition 2nd Prize</li>
+                        <li>2019-2020 National Scholarship</li>
+                        <li>2019 Shanghai Undergraduate Creative Robot Competition 2nd Prize</li>
+                        <li>2018-2019 National Scholarship</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="section">
+                <h2 class="section-title">Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">Algorithm Research Intern</div>
+                            <div class="item-subtitle">
+                                <img src="assets/vivo_logo.png" alt="VIVO Logo" class="logo" style="margin-top: -10px;">
+                                 - Imaging Algorithm Research Department, Quality Enhancement Center
+                            </div>
+                        </div>
+                        <div class="item-date">2024.05 - 2024.09</div>
+                    </div>
+                    <div class="item-description">
+                        Conducted frontier research on image matting algorithms for mobile imaging. Focused on addressing the generalization limitations of interactive matting, proposed the COCO-Matting dataset and the <strong>SEMat</strong> framework. Related work has been submitted to IEEE TCSVT.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">Algorithm Research Intern</div>
+                            <div class="item-subtitle">
+                                <img src="assets/huawei_logo.png" alt="Huawei Logo" class="logo" style="height: 50px;">
+                                 - Central Research Institute, Advanced Computing and Storage Laboratory
+                            </div>
+                        </div>
+                        <div class="item-date">2024.09 - 2024.12</div>
+                    </div>
+                    <div class="item-description">
+                        Conducted frontier research on scene understanding algorithms based on event cameras. Focused on the underutilization of foundation models in event-based vision, proposed the <strong>TGVFM</strong> framework. Related work has been submitted to IEEE TCSVT.
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Research Section -->
+            <section class="section">
+                <h2 class="section-title">Research & Publications (First Author)</h2>
+                
+                <div class="research-item" style="display: flex; align-items: center; justify-content: space-between;">
+                    <div style="flex: 1; min-width: 0;">
+                        <div class="item-title">Towards Scalable and Consistent 3D Editing</div>
+                        <div class="item-description">
+                            <p><strong>Ruihao Xia</strong>, Yang Tang*, Pan Zhou</p>
+                            <p><em>Under Review 2025</em></p>
+                            <p>
+                                We introduce <strong>3DEditVerse</strong>, the largest paired 3D editing benchmark, and propose <strong>3DEditFormer</strong>, a mask-free transformer enabling precise, consistent, and scalable 3D edits. 
+                            </p>
+                            <!-- <a href="#" class="publication-link">Paper</a> | 
+                            <a href="#" class="publication-link">Code</a> |  -->
+                            <a href="https://anonymousresearch37.github.io/3DEditFormer/" class="publication-link">Project Page</a>
+                        </div>
+                        <div class="research-tags">
+                            <span class="tag">3D Editing</span>
+                            <span class="tag">3D Generation</span>
+                        </div>
+                    </div>
+                    <div class="research-image">
+                        <img src="assets/3DEditFormer.png" alt="3DEditFormer" />
+                    </div>
+                </div>
+
+                <div class="research-item" style="display: flex; align-items: center; justify-content: space-between;">
+                    <div style="flex: 1; min-width: 0;">
+                        <div class="item-title">Unsupervised Modality Adaptation with Text-to-Image Diffusion Models for Semantic Segmentation</div>
+                        <div class="item-description">
+                            <p><strong>Ruihao Xia</strong>, Yu Liang, Peng-Tao Jiang, Hao Zhang, Bo Li*, Yang Tang*, Pan Zhou</p>
+                            <p><em>Neural Information Processing Systems (<strong>NeurIPS</strong>) 2024</em></p>
+                            <p>
+                                We propose <strong>MADM</strong>, a diffusion-based framework that leverages text-to-image pre-trained models with pseudo-label stabilization and latent label regression, achieving SoTA semantic segmentation adaptation across image, depth, infrared, and events.
+                            </p>
+                            <a href="https://arxiv.org/abs/2410.21708" class="publication-link">Paper</a> | 
+                            <a href="https://github.com/XiaRho/MADM" class="publication-link">Code</a> 
+                            <!-- <a href="https://anonymousresearch37.github.io/3DEditFormer/" class="publication-link">Project Page</a> -->
+                        </div>
+                        <div class="research-tags">
+                            <span class="tag">Cross-Modality Domain Adaptation</span>
+                            <span class="tag">Semantic Segmentation</span>
+                        </div>
+                    </div>
+                    <div class="research-image">
+                        <img src="assets/MADM.png" alt="MADM" />
+                    </div>
+                </div>
+                
+                <div class="research-item" style="display: flex; align-items: center; justify-content: space-between;">
+                    <div style="flex: 1; min-width: 0;">
+                        <div class="item-title">CMDA: Cross-Modality Domain Adaptation for Nighttime Semantic Segmentation</div>
+                        <div class="item-description">
+                            <p><strong>Ruihao Xia</strong>, Chaoqiang Zhao, Meng Zheng, Ziyan Wu, Qiyu Sun, Yang Tang*</p>
+                            <p><em>International Conference on Computer Vision (<strong>ICCV</strong>) 2023</em></p>
+                            <p>
+                                We propose <strong>CMDA</strong>, a cross-modality domain adaptation framework that leverages both images and events with daytime labels, introducing the first image-event nighttime segmentation dataset for evaluation.
+                            </p>
+                            <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Xia_CMDA_Cross-Modality_Domain_Adaptation_for_Nighttime_Semantic_Segmentation_ICCV_2023_paper.html" class="publication-link">Paper</a> | 
+                            <a href="https://github.com/XiaRho/CMDA" class="publication-link">Code</a> 
+                            <!-- <a href="https://anonymousresearch37.github.io/3DEditFormer/" class="publication-link">Project Page</a> -->
+                        </div>
+                        <div class="research-tags">
+                            <span class="tag">Domain Adaptation Semantic Segmentation</span>
+                            <span class="tag">Event-based Vision</span>
+                        </div>
+                    </div>
+                    <div class="research-image">
+                        <img src="assets/CMDA.png" alt="CMDA" />
+                    </div>
+                </div>
+
+                <div class="research-item" style="display: flex; align-items: center; justify-content: space-between;">
+                    <div style="flex: 1; min-width: 0;">
+                        <div class="item-title">Towards Natural Image Matting in the Wild via Real-Scenario Prior</div>
+                        <div class="item-description">
+                            <p><strong>Ruihao Xia</strong>, Yu Liang, Peng-Tao Jiang*, Hao Zhang, Qianru Sun, Yang Tang*, Bo Li, Pan Zhou</p>
+                            <p><em>Submitted to IEEE TCSVT 2025</em></p>
+                            <p>
+                                We introduce COCO-Matting and SEMat, a dataset-method pair that leverages real-world human mattes and a feature/matte-aligned transformer-decoder design with trimap-based regularization.
+                            </p>
+                            <a href="https://arxiv.org/abs/2410.06593" class="publication-link">Paper</a> | 
+                            <a href="https://github.com/XiaRho/SEMat" class="publication-link">Code</a> 
+                            <!-- <a href="https://anonymousresearch37.github.io/3DEditFormer/" class="publication-link">Project Page</a> -->
+                        </div>
+                        <div class="research-tags">
+                            <span class="tag">Image Matting</span>
+                            <span class="tag">Image Segmentation</span>
+                        </div>
+                    </div>
+                    <div class="research-image">
+                        <img src="assets/SEMat.png" alt="SEMat" />
+                    </div>
+                </div>
+
+                <div class="research-item" style="display: flex; align-items: center; justify-content: space-between;">
+                    <div style="flex: 1; min-width: 0;">
+                        <div class="item-title">Temporal-Guided Visual Foundation Models for Event-Based Vision </div>
+                        <div class="item-description">
+                            <p><strong>Ruihao Xia</strong>, Junhong Cai, Luziwei Leng*, Ran Cheng, Yang Tang*, Pan Zhou</p>
+                            <p><em>Submitted to IEEE TCSVT 2025</em></p>
+                            <p>
+                                We present <strong>TGVFM</strong>, a temporal-guided framework that integrates pretrained Visual Foundation Models with novel spatiotemporal attention blocks, achieving SoTA gains in event-based semantic seg., depth estimation, and object detection.
+                            </p>
+                            <!-- <a href="https://arxiv.org/abs/2410.06593" class="publication-link">Paper</a> | 
+                            <a href="https://github.com/XiaRho/SEMat" class="publication-link">Code</a>  -->
+                            <!-- <a href="https://anonymousresearch37.github.io/3DEditFormer/" class="publication-link">Project Page</a> -->
+                        </div>
+                        <div class="research-tags">
+                            <span class="tag">Event-based Vision</span>
+                            <span class="tag">Visual Foundation Models</span>
+                        </div>
+                    </div>
+                    <div class="research-image">
+                        <img src="assets/TGVFM.png" alt="TGVFM" />
+                    </div>
+                </div>
+
+                <div class="research-item" style="display: flex; align-items: center; justify-content: space-between;">
+                    <div style="flex: 1; min-width: 0;">
+                        <div class="item-title">Modality Translation and Fusion for Event-based Semantic Segmentation</div>
+                        <div class="item-description">
+                            <p><strong>Ruihao Xia</strong>, Chaoqiang Zhao, Qiyu Sun, Shuang Cao, Yang Tang*</p>
+                            <p><em>IFAC Control Engineering Practice (CEP) 2023</em></p>
+                            <p>
+                                We propose <strong>MTF</strong>, a modality translation and fusion framework that distills complementary cross-modality knowledge from image-based teachers to event-based networks, achieving SoTA semantic segmentation in low-light conditions.
+                            </p>
+                            <a href="https://www.sciencedirect.com/science/article/pii/S0967066123000990" class="publication-link">Paper</a> 
+                            <!-- <a href="https://github.com/XiaRho/MTF" class="publication-link">Code</a>  -->
+                            <!-- <a href="https://anonymousresearch37.github.io/3DEditFormer/" class="publication-link">Project Page</a> -->
+                        </div>
+                        <div class="research-tags">
+                            <span class="tag">Event-based Vision</span>
+                            <span class="tag">Semantic Segmentation</span>
+                        </div>
+                    </div>
+                    <div class="research-image">
+                        <img src="assets/MTF.png" alt="MTF" />
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+    <script src="js/vendor/jquery/jquery-1.12.3.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+</body>
+</html>
